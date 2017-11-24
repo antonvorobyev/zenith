@@ -1,0 +1,26 @@
+{
+  "name": "zenith",
+  "version": "0.1.0",
+  "description": "Photo management application",
+  "main": "main.js",
+  "scripts": {
+    "start": "./node_modules/.bin/electron .",
+    "build": "./node_modules/.bin/electron-packager . --all --out=build",
+    "test": "./node_modules/.bin/mocha ./e2e/",
+    "release": "npm run test && npm run build"
+  },
+  "repository": "https://github.com/zenithapp/zenith",
+  "keywords": [
+    "zenith",
+    "photo",
+    "manager"
+  ],
+  "author": "Anton Vorobyev",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "~1.7.8",
+    "electron-packager": "^10.1.0",
+    "mocha": "^4.0.1",
+    "spectron": "^3.7.2"
+  }
+}
